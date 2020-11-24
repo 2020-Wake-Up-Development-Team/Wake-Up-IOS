@@ -64,6 +64,10 @@ PODS:
   - Realm/Headers (10.1.2)
   - RealmSwift (10.1.2):
     - Realm (= 10.1.2)
+  - Remon-WebRTC-iOS (1.86.2)
+  - RemoteMonster (2.7.14):
+    - Remon-WebRTC-iOS (= 1.86.2)
+    - SwiftProtobuf (= 1.9.0)
   - Reusable (4.1.1):
     - Reusable/Storyboard (= 4.1.1)
     - Reusable/View (= 4.1.1)
@@ -88,6 +92,7 @@ PODS:
   - SwiftMessages (8.0.3):
     - SwiftMessages/App (= 8.0.3)
   - SwiftMessages/App (8.0.3)
+  - SwiftProtobuf (1.9.0)
 
 DEPENDENCIES:
   - CryptoSwift
@@ -101,6 +106,7 @@ DEPENDENCIES:
   - NVActivityIndicatorView/Extended
   - R.swift
   - RealmSwift
+  - RemoteMonster (~> 2.7.0)
   - Reusable
   - RxCocoa
   - RxDataSources
@@ -126,6 +132,8 @@ SPEC REPOS:
     - R.swift.Library
     - Realm
     - RealmSwift
+    - Remon-WebRTC-iOS
+    - RemoteMonster
     - Reusable
     - RxCocoa
     - RxDataSources
@@ -134,6 +142,7 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - SwiftMessages
+    - SwiftProtobuf
 
 SPEC CHECKSUMS:
   Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
@@ -151,6 +160,8 @@ SPEC CHECKSUMS:
   R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
   Realm: 031fdd4be7094d01b43af1a5e49766ab644bb800
   RealmSwift: 43cf2e114baa9d17d34eb81e7d0def31f21cd444
+  Remon-WebRTC-iOS: 045106311d663fd7dfd7e8e2c78153b22d802c94
+  RemoteMonster: f630d1857887c5b1c75f8ccc94d0e69da773b65a
   Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
@@ -159,7 +170,8 @@ SPEC CHECKSUMS:
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SwiftMessages: 063ec9ffea3ffa7d17ba595157a9ec78e4fe045f
+  SwiftProtobuf: ecbec1be9036d15655f6b3443a1c4ea693c97932
 
-PODFILE CHECKSUM: f024362677ae7108c8faf1edcc9f1668e47a7588
+PODFILE CHECKSUM: c3986225608d452be8e0ecfde75c0c036351e958
 
 COCOAPODS: 1.10.0

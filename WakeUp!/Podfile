@@ -43,4 +43,7 @@ target 'WakeUp!' do
   # Code Quality
   pod 'FLEX'
 
+  # WebRTC
+  pod 'RemoteMonster', '~> 2.7.0'
+
 end
