@@ -10,14 +10,18 @@
 		F2955BCC256BC73900D6F87C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2955BCB256BC73900D6F87C /* AppDelegate.swift */; };
 		F2955BD5256BC73A00D6F87C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2955BD4256BC73A00D6F87C /* Assets.xcassets */; };
 		F2955BD8256BC73A00D6F87C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2955BD6256BC73A00D6F87C /* LaunchScreen.storyboard */; };
+		F85E5E0D75715AC9A791838C /* Pods_WakeUp_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA108D02274F3AFE107EE84 /* Pods_WakeUp_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27D97E9CD33771C540AF3EE2 /* Pods-WakeUp!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakeUp!.debug.xcconfig"; path = "Target Support Files/Pods-WakeUp!/Pods-WakeUp!.debug.xcconfig"; sourceTree = "<group>"; };
+		DA4117ABCBDC86904E557363 /* Pods-WakeUp!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakeUp!.release.xcconfig"; path = "Target Support Files/Pods-WakeUp!/Pods-WakeUp!.release.xcconfig"; sourceTree = "<group>"; };
 		F2955BC8256BC73900D6F87C /* WakeUp!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WakeUp!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2955BCB256BC73900D6F87C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2955BD4256BC73A00D6F87C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2955BD7256BC73A00D6F87C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2955BD9256BC73A00D6F87C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA108D02274F3AFE107EE84 /* Pods_WakeUp_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WakeUp_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,17 +29,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F85E5E0D75715AC9A791838C /* Pods_WakeUp_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FD7F1EF24507DBF2782E660 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27D97E9CD33771C540AF3EE2 /* Pods-WakeUp!.debug.xcconfig */,
+				DA4117ABCBDC86904E557363 /* Pods-WakeUp!.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C8B3BB9B948AC48BB3609CE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDA108D02274F3AFE107EE84 /* Pods_WakeUp_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F2955BBF256BC73900D6F87C = {
 			isa = PBXGroup;
 			children = (
 				F2955BCA256BC73900D6F87C /* WakeUp! */,
 				F2955BC9256BC73900D6F87C /* Products */,
+				6FD7F1EF24507DBF2782E660 /* Pods */,
+				C8B3BB9B948AC48BB3609CE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2955BDC256BC73A00D6F87C /* Build configuration list for PBXNativeTarget "WakeUp!" */;
 			buildPhases = (
+				D0DE9E99AB4A2261D295B8ED /* [CP] Check Pods Manifest.lock */,
 				F2955BC4256BC73900D6F87C /* Sources */,
 				F2955BC5256BC73900D6F87C /* Frameworks */,
 				F2955BC6256BC73900D6F87C /* Resources */,
+				717B823202BEF5611D00C46C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,6 +228,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		717B823202BEF5611D00C46C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WakeUp!/Pods-WakeUp!-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WakeUp!/Pods-WakeUp!-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WakeUp!/Pods-WakeUp!-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0DE9E99AB4A2261D295B8ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WakeUp!-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F2955BC4256BC73900D6F87C /* Sources */ = {
@@ -343,6 +412,7 @@
 		};
 		F2955BDD256BC73A00D6F87C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27D97E9CD33771C540AF3EE2 /* Pods-WakeUp!.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -362,6 +432,7 @@
 		};
 		F2955BDE256BC73A00D6F87C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA4117ABCBDC86904E557363 /* Pods-WakeUp!.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
