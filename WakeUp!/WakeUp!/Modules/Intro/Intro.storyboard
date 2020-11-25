@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intro View Controller-->
+        <scene sceneID="w8y-Jf-09k">
+            <objects>
+                <viewController storyboardIdentifier="IntroViewController" id="er5-h4-tgQ" customClass="IntroViewController" customModule="WakeUp_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="352-RM-vC2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CK4-kA-7w1">
+                                <rect key="frame" x="50" y="318" width="314" height="164"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="로그인 하여 수업 집중도를 트래킹">
+                                        <attributes>
+                                            <font key="NSFont" size="40" name="AppleSDGothicNeo-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTO-tW-4cD">
+                                <rect key="frame" x="47" y="532" width="220" height="55"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="30"/>
+                                <state key="normal" title="로그인" backgroundImage="WhiteButton">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbA-jQ-1IG">
+                                <rect key="frame" x="147" y="607" width="220" height="55"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="30"/>
+                                <state key="normal" title="회원가입" backgroundImage="WhiteButton">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wake Up!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7H-xZ-PK5">
+                                <rect key="frame" x="50" y="279" width="82" height="24"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2xI-aW-gLW"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CK4-kA-7w1" firstAttribute="leading" secondItem="2xI-aW-gLW" secondAttribute="leading" constant="50" id="09d-sU-P1F"/>
+                            <constraint firstItem="gbA-jQ-1IG" firstAttribute="centerX" secondItem="352-RM-vC2" secondAttribute="centerX" constant="50" id="58d-Ov-wRG"/>
+                            <constraint firstItem="oTO-tW-4cD" firstAttribute="top" secondItem="CK4-kA-7w1" secondAttribute="bottom" constant="50" id="LG1-oc-VQx"/>
+                            <constraint firstItem="2xI-aW-gLW" firstAttribute="bottom" secondItem="gbA-jQ-1IG" secondAttribute="bottom" constant="200" id="SWl-BO-2ZB"/>
+                            <constraint firstItem="2xI-aW-gLW" firstAttribute="trailing" secondItem="CK4-kA-7w1" secondAttribute="trailing" constant="50" id="Spc-ea-c1c"/>
+                            <constraint firstItem="CK4-kA-7w1" firstAttribute="centerX" secondItem="352-RM-vC2" secondAttribute="centerX" id="d8r-yk-anR"/>
+                            <constraint firstItem="CK4-kA-7w1" firstAttribute="top" secondItem="Y7H-xZ-PK5" secondAttribute="bottom" constant="15" id="i4j-FW-laf"/>
+                            <constraint firstItem="gbA-jQ-1IG" firstAttribute="top" secondItem="oTO-tW-4cD" secondAttribute="bottom" constant="20" id="nnl-Ye-06c"/>
+                            <constraint firstItem="Y7H-xZ-PK5" firstAttribute="leading" secondItem="CK4-kA-7w1" secondAttribute="leading" id="tt5-S0-RKu"/>
+                            <constraint firstItem="oTO-tW-4cD" firstAttribute="centerX" secondItem="352-RM-vC2" secondAttribute="centerX" constant="-50" id="wyk-Av-947"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="signInButton" destination="oTO-tW-4cD" id="y3d-zk-BoP"/>
+                        <outlet property="signUpButton" destination="gbA-jQ-1IG" id="WRg-K6-CrL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QEy-wr-Y0b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WhiteButton" width="220" height="55"/>
+    </resources>
+</document>
