@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="95U-QL-arx">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="bCX-fI-NqA" customClass="MainViewController" customModule="WakeUp_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mB3-Yu-MRL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???님 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcK-gC-BiK">
+                                <rect key="frame" x="50" y="224" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIb-F8-QxH">
+                                <rect key="frame" x="50" y="255" width="225" height="106"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="수업에  참여해볼까요?">
+                                        <attributes>
+                                            <font key="NSFont" size="40" name="AppleSDGothicNeo-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05S-RZ-bL0">
+                                <rect key="frame" x="50" y="475" width="314" height="126"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="졸고 있는가? 집중을 하고 있는가? 핸드폰을 하고 있는가? 잡담을 하고 있는가?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="0.29621776050289733" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="AppleSDGothicNeo-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wd-w2-gpW">
+                                <rect key="frame" x="0.0" y="631" width="115" height="231"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="3i3-8o-HbR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="36"/>
+                                <state key="normal" title="생성" backgroundImage="BlueRightCircle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOK-SA-Buh">
+                                <rect key="frame" x="297" y="531" width="117" height="231"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="231" id="YBv-JJ-Jz7"/>
+                                    <constraint firstAttribute="width" constant="117" id="dS9-2Z-hMf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="36"/>
+                                <state key="normal" title="참가" backgroundImage="BlueLeftCircle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="집중도를 분석해드려요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYk-fO-bTg">
+                                <rect key="frame" x="50" y="431" width="178" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Sjq-BU-cQa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zIb-F8-QxH" firstAttribute="top" secondItem="YcK-gC-BiK" secondAttribute="bottom" constant="10" id="6i7-6Q-oR6"/>
+                            <constraint firstItem="Sjq-BU-cQa" firstAttribute="bottom" secondItem="jOK-SA-Buh" secondAttribute="bottom" constant="100" id="Gp6-ZK-aTL"/>
+                            <constraint firstItem="05S-RZ-bL0" firstAttribute="leading" secondItem="Sjq-BU-cQa" secondAttribute="leading" constant="50" id="Iq5-gc-m2j"/>
+                            <constraint firstItem="2wd-w2-gpW" firstAttribute="top" secondItem="05S-RZ-bL0" secondAttribute="bottom" constant="30" id="Orc-ug-ZSI"/>
+                            <constraint firstItem="yYk-fO-bTg" firstAttribute="leading" secondItem="05S-RZ-bL0" secondAttribute="leading" id="VFR-MT-aeh"/>
+                            <constraint firstItem="Sjq-BU-cQa" firstAttribute="trailing" secondItem="jOK-SA-Buh" secondAttribute="trailing" id="YV8-Xr-qqH"/>
+                            <constraint firstItem="2wd-w2-gpW" firstAttribute="leading" secondItem="Sjq-BU-cQa" secondAttribute="leading" id="YfL-Xy-T9n"/>
+                            <constraint firstItem="Sjq-BU-cQa" firstAttribute="bottom" secondItem="2wd-w2-gpW" secondAttribute="bottom" id="aBw-CZ-ruw"/>
+                            <constraint firstItem="05S-RZ-bL0" firstAttribute="centerX" secondItem="mB3-Yu-MRL" secondAttribute="centerX" id="bzW-ni-ldo"/>
+                            <constraint firstItem="YcK-gC-BiK" firstAttribute="leading" secondItem="zIb-F8-QxH" secondAttribute="leading" id="eYU-z4-Z5D"/>
+                            <constraint firstItem="yYk-fO-bTg" firstAttribute="top" secondItem="zIb-F8-QxH" secondAttribute="bottom" constant="70" id="lOv-Va-TAg"/>
+                            <constraint firstItem="05S-RZ-bL0" firstAttribute="top" secondItem="yYk-fO-bTg" secondAttribute="bottom" constant="20" id="ypj-jm-WaH"/>
+                            <constraint firstItem="zIb-F8-QxH" firstAttribute="leading" secondItem="yYk-fO-bTg" secondAttribute="leading" id="zhs-Sf-z8i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="createClassButton" destination="2wd-w2-gpW" id="Grb-e3-KhG"/>
+                        <outlet property="joinClassButton" destination="jOK-SA-Buh" id="VHj-Ji-7C1"/>
+                        <outlet property="usernameLabel" destination="YcK-gC-BiK" id="B3t-dQ-eui"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HrZ-H5-h0e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7.2463768115942031" y="86.383928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BlueLeftCircle" width="117" height="231"/>
+        <image name="BlueRightCircle" width="115" height="231"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
