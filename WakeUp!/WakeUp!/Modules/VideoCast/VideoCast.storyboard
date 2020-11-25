@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video Cast View Controller-->
+        <scene sceneID="gul-9B-LLT">
+            <objects>
+                <viewController storyboardIdentifier="VideoCastViewController" id="bdA-bz-jld" customClass="VideoCastViewController" customModule="WakeUp_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pb1-nA-BQ3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vBQ-1q-LNK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m3V-3L-YCn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYY-gf-TBq">
+                                        <rect key="frame" x="351" y="28" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="LiD-xv-r2M"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="SwitchCamera"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9O-mG-UhE">
+                                        <rect key="frame" x="304.5" y="693" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="hia-kJ-JSE"/>
+                                            <constraint firstAttribute="width" constant="55" id="jls-gh-ta7"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Mute"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fw-6R-o8T">
+                                        <rect key="frame" x="54.5" y="693" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="Q4t-qT-Dse"/>
+                                            <constraint firstAttribute="width" constant="55" id="W1w-x2-o61"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="CameraOff"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ChannelID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkP-an-0TQ">
+                                        <rect key="frame" x="163" y="30" width="88" height="24"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXV-Nk-Dhu">
+                                        <rect key="frame" x="179.5" y="693" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="C7c-Zl-lsz"/>
+                                            <constraint firstAttribute="width" constant="55" id="GLk-CR-NUh"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="CallEnd"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uP8-xd-F8I">
+                                        <rect key="frame" x="279" y="498" width="100" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="rqF-wt-s8O"/>
+                                            <constraint firstAttribute="width" constant="100" id="t3s-Vd-RwS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="h9O-mG-UhE" firstAttribute="leading" secondItem="FXV-Nk-Dhu" secondAttribute="trailing" constant="70" id="18F-r0-TR4"/>
+                                    <constraint firstAttribute="bottom" secondItem="FXV-Nk-Dhu" secondAttribute="bottom" constant="70" id="25Q-bZ-HIP"/>
+                                    <constraint firstItem="FXV-Nk-Dhu" firstAttribute="centerX" secondItem="m3V-3L-YCn" secondAttribute="centerX" id="963-Jo-w2k"/>
+                                    <constraint firstItem="YkP-an-0TQ" firstAttribute="centerX" secondItem="m3V-3L-YCn" secondAttribute="centerX" id="JmZ-Zv-42D"/>
+                                    <constraint firstItem="h9O-mG-UhE" firstAttribute="centerY" secondItem="FXV-Nk-Dhu" secondAttribute="centerY" id="Lj5-IS-Ew9"/>
+                                    <constraint firstItem="2fw-6R-o8T" firstAttribute="centerY" secondItem="FXV-Nk-Dhu" secondAttribute="centerY" id="UDb-sP-zXU"/>
+                                    <constraint firstAttribute="trailing" secondItem="uP8-xd-F8I" secondAttribute="trailing" constant="35" id="ULt-My-qFq"/>
+                                    <constraint firstItem="h9O-mG-UhE" firstAttribute="top" secondItem="uP8-xd-F8I" secondAttribute="bottom" constant="45" id="acQ-bz-7bD"/>
+                                    <constraint firstItem="YkP-an-0TQ" firstAttribute="top" secondItem="m3V-3L-YCn" secondAttribute="top" constant="30" id="f2f-gx-bZt"/>
+                                    <constraint firstItem="CYY-gf-TBq" firstAttribute="centerY" secondItem="YkP-an-0TQ" secondAttribute="centerY" id="iog-bD-ss2"/>
+                                    <constraint firstAttribute="trailing" secondItem="CYY-gf-TBq" secondAttribute="trailing" constant="35" id="xkb-27-F3g"/>
+                                    <constraint firstItem="FXV-Nk-Dhu" firstAttribute="leading" secondItem="2fw-6R-o8T" secondAttribute="trailing" constant="70" id="z8r-ex-a7h"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6On-kZ-XQF"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6On-kZ-XQF" firstAttribute="bottom" secondItem="vBQ-1q-LNK" secondAttribute="bottom" id="1bK-eP-fGc"/>
+                            <constraint firstItem="m3V-3L-YCn" firstAttribute="leading" secondItem="6On-kZ-XQF" secondAttribute="leading" id="HaQ-h5-Mb9"/>
+                            <constraint firstItem="m3V-3L-YCn" firstAttribute="top" secondItem="6On-kZ-XQF" secondAttribute="top" id="Mbk-R5-92N"/>
+                            <constraint firstItem="vBQ-1q-LNK" firstAttribute="leading" secondItem="6On-kZ-XQF" secondAttribute="leading" id="Sdu-GA-09h"/>
+                            <constraint firstItem="6On-kZ-XQF" firstAttribute="trailing" secondItem="vBQ-1q-LNK" secondAttribute="trailing" id="ctS-V1-4Uc"/>
+                            <constraint firstItem="6On-kZ-XQF" firstAttribute="trailing" secondItem="m3V-3L-YCn" secondAttribute="trailing" id="gEm-0N-K5g"/>
+                            <constraint firstItem="6On-kZ-XQF" firstAttribute="bottom" secondItem="m3V-3L-YCn" secondAttribute="bottom" id="nHM-uW-vJn"/>
+                            <constraint firstItem="vBQ-1q-LNK" firstAttribute="top" secondItem="6On-kZ-XQF" secondAttribute="top" id="t2w-G8-hwV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraOffButton" destination="2fw-6R-o8T" id="lH6-Rh-DPh"/>
+                        <outlet property="channelIDLabel" destination="YkP-an-0TQ" id="3Id-FW-ys4"/>
+                        <outlet property="endCallButton" destination="FXV-Nk-Dhu" id="dYM-95-3Q8"/>
+                        <outlet property="muteVoiceButton" destination="h9O-mG-UhE" id="avh-9W-4hR"/>
+                        <outlet property="remonCall" destination="V6s-5I-AoD" id="uSf-Hp-R3L"/>
+                        <outlet property="switchCameraButton" destination="CYY-gf-TBq" id="Yhf-wB-MUA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nvh-Rs-Vvh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="V6s-5I-AoD" customClass="RemonCall" customModule="RemoteMonster">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="serviceId" value="fb7c908a-c1d4-42d1-b78c-2c7859dad42d"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="serviceKey" value="e4e2401e10dcdacd7132743cab38172599e168d82a7f1d1d2a7922f49660be54"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="serviceToken" value="fee03c342636e340b7d6adb9658f9b7dab411dc464ca843c96a23fc41c1080d8"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="localView" destination="uP8-xd-F8I" id="uQt-hw-239"/>
+                        <outlet property="remoteView" destination="vBQ-1q-LNK" id="2nF-Pl-gb8"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-831.88405797101461" y="151.33928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CallEnd" width="55" height="55"/>
+        <image name="CameraOff" width="55" height="55"/>
+        <image name="Mute" width="55" height="55"/>
+        <image name="SwitchCamera" width="28" height="28"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
